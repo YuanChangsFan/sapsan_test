@@ -1,0 +1,7 @@
+curl -X POST "http://localhost:8000/upload/" -F "file=@./ADC_8.docx"
+curl -X POST "http://localhost:8000/ask/" -d "document_id=" -d "question=Укажи предмет договора"
+curl -X POST "http://localhost:8000/ask/" -d "document_id=" -d "question=Какой номер и дата у этого договора?"
+curl -X POST "http://localhost:8000/ask/" -d "document_id=" -d "question=Какие штрафные санкции предусматривает этот договор в отношении поставщика?"
+curl -X POST "http://localhost:8000/ask/" -d "document_id=" -d "question=Какие штрафные санкции предусматривает этот договор в отношении покупателя?"
+
+curl "http://localhost:8000/answer/"

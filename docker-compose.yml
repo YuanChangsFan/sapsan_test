@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    container_name: doc_qa_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MISTRAL_API_KEY=
+    volumes:
+      - .:/app
+    restart: unless-stopped
